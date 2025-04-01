@@ -25,13 +25,13 @@ body {
     top: 5dvh;
 }
 
-.hero__detailcont {
+/* .hero__detailcont {
     max-width: 35dvw;
     min-height: fit-content;
     padding: 2vw;
-    padding-top: 0dvh;
+    padding-bottom: 0dvh;
     top: 35dvw;
-}
+} */
 
 .sticky {
     position: -webkit-sticky;
@@ -57,9 +57,6 @@ body {
     padding-bottom: 35dvh;
     margin: 0.5dvw;
     border-radius: 0 0 15px 15px;
-    background-image: url('../IMG/June28.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
     border: 0.25vw solid var(--highlightblue);
     color: var(--lighthighlight);
 }
