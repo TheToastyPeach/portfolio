@@ -1,0 +1,15 @@
+---
+layout: base.njk
+---
+
+<main>
+    <section class="postPaddingWrapper">
+        <a href="/"><< Back to home</a>
+        <div>
+            <h1>{{title}}</h1>
+        </div>
+
+        <img src="{{imgHighlight}}" alt="{{imgHighlightAlt}}">
+        {{content | safe}}
+    </section>  
+</main>

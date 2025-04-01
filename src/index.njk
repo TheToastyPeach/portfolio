@@ -14,9 +14,10 @@ layout: base.njk
                 </div> #}
             </div>
             <div class="hero__featured">
+                {# Looping to get all works with "featured" tag #}
                 {%-for work in collections.featured-%}
 
-                    <a href="fakepage">
+                    <a href="{{work.url}}">
                         <div class="hero__featured__project"  
                         style="background-image: url('{{work.data.imgHighlight}}');
                         background-size: cover;
@@ -32,15 +33,20 @@ layout: base.njk
             </div>
         </section>
         <section class="gallery">
-            <div class="gallery__container">
-                <a class="gallery__item" href="fakepage">
-                    <div class="gallery__item-title">
-                        <h2>Project Title</h2>
-                        <p>Type of work</p>
-                    </div>
-                    <img src="/IMG/June28.jpeg" alt="Project Image">
-                </a>
-            </div>
+            {# Looping to get works to display in the lower gallery #}
+            {%-for work in collections.work-%}
+
+                <div class="gallery__container">
+                    <a class="gallery__item" href="{{work.url}}">
+                        <div class="gallery__item-title">
+                            <h2>{{work.data.title}}</h2>
+                            <p>{{work.data.typeOfWork | join(', ')}}</p>
+                        </div>
+                        <img src="{{work.data.imgHighlight}}" alt="{{work.data.imgHighlightAlt}}">
+                    </a>
+                </div>
+
+            {%-endfor%}
         </section>
     </main>
     <script src="/JS/scripts.js"></script>

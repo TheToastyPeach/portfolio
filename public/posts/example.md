@@ -1,6 +1,6 @@
 ---
 title: Test Article
-tags: ["work", "featured"]
+tags: ["featured"]
 softwareUsed: ["Blender","Maya", "Substance"]
 typeOfWork: ["3D","Animation","Modeling"]
 dateCreated: 2023-10-25

@@ -122,3 +122,13 @@ body {
 
 
 /* ================================================= */
+
+/* Post Page */
+/* ================================================= */
+.postPaddingWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 5dvw;
+    background-color: var(--lighthighlight);
+}
+/* ================================================= */
