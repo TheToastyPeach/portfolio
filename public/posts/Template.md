@@ -1,5 +1,5 @@
 ---
-title: Test Article 2
+title: Test Article 
 tags: ["featured"]
 softwareUsed: ["Blender","Maya", "Substance"]
 typeOfWork: ["3D","Animation","Modeling"]

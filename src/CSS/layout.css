@@ -125,10 +125,115 @@ body {
 
 /* Post Page */
 /* ================================================= */
-.postPaddingWrapper {
+.back {
+    padding-left: 5dvw;
+    padding-top: 5dvh;
+  }
+  
+  .postPaddingWrapper {
+    padding-left: 30dvw;
+    padding-right: 30dvw;
     display: flex;
     flex-direction: column;
-    padding: 5dvw;
-    background-color: var(--lighthighlight);
-}
+  }
+  
+  .botMargin {
+    margin-bottom: 2dvw;
+  }
+  
+  .postPaddingWrapper img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .postImageGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1dvw;
+  }
+  
+  .postImageGallery img:nth-child(1) {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 2;
+    max-width: 100%;
+    height: auto;
+  }
+  .postImageGallery img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  
+  .postImageGalleryBot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .postImageGalleryBot img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    max-width: 31%;
+  }
+
+  .postImageVideo {
+    border: 5px solid #a59bff;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .postImageVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .postImageGallery img {
+    border: 5px solid #a59bff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .postImageGalleryBot img {
+    border: 5px solid #a59bff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .postPaddingWrapper img:active {
+    outline: none;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid white;
+  }
+
+
 /* ================================================= */
