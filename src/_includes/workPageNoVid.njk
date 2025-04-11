@@ -1,0 +1,51 @@
+---
+layout: base.njk
+---
+
+  <body>
+    <a href="/"><p class="back"> << Back</p></a>
+    <div class="postPaddingWrapper">
+      <div class="postText botMargin">
+        <h1>{{title}}</h1>
+        <p>
+          {{description}}
+        </p>
+        <hr />
+        <p>{{dateCreated}} | {{softwareUsed | join(' | ')}}</p>
+      </div>
+      <div class="postImageVideo botMargin">
+        <img
+          src="{{img1}}"
+          alt="{{img1Alt}}"
+          class="postImage"
+        ></img>
+      </div>
+      <div class="postText botMargin">
+        <h2>{{heading2}}</h2>
+        <p>
+          {{description2}}
+        </p>
+      </div>
+      <div class="postImageGallery botMargin">
+        <img src="{{img2}}" alt="{{img2Alt}}" />
+        <img src="{{img3}}" alt="{{img3Alt}}" />
+        <img src="{{img4}}" alt="{{img4Alt}}" />
+      </div>
+      <div class="postText botMargin">
+        <h2>{{heading3}}</h2>
+        <p>
+          {{description3}}
+        </p>
+      </div>
+      <div class="postImageGalleryBot botMargin">
+        <img src="{{img5}}" alt="{{img5Alt}}" />
+        <img src="{{img6}}" alt="{{img6Alt}}" />
+        <img src="{{img7}}" alt="{{img7Alt}}" />
+      </div>
+    </div>
+
+    <div id="imageOverlay" class="overlay" onclick="closeOverlay()">
+      <img id="overlayImage" src="" alt="Full Resolution Image" />
+    </div>
+  </body>
+

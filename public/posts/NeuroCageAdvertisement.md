@@ -7,6 +7,7 @@ dateCreated: Jan 5th, 2025
 imgHighlight: /IMG/June28.jpeg
 imgHighlightAlt: Clouds
 description: Working at the McGill University Neuroscience Research Lab in Montreal to help visualize and express complex ideas through 3D art and design. I'm currently working on an explanation short film to communicate some of the work they have been producing. This includes modelling, animating, re-topologizing, rigging, UV mapping, and building environments in 3D space.
+layout: workPage.njk
 heading2: Project Planning
 description2: As one of the main projects the researchers in the lab are working on is ways to implement AI, they're looking to show a large (and positive) change of space for lab environments, while maintaining not actually changing anything to do with the existing infrastructure in labs and vivariums. The need for both realistic and simplified explanations of lab technology as led me to develop and create various textures to fit the different needs of each project. With the chosen style of animation as well, it means making environmental assets from scratch to fit the theme.
 heading3: Asset Development and Refinement 

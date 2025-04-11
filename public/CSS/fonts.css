@@ -31,5 +31,18 @@ a {
 }
 
 .back {
-    color: var(--highlightblue);
+    color: var(--highlightpurple);
+    font-size: 1.1rem;
+}
+
+.link {
+    color: var(--highlightpurple);
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.postPaddingWrapper p {
+    font-size: 1.1rem;
+    line-height: 1.15;
 }

@@ -111,6 +111,8 @@ body {
     padding: 1dvw;
     background-color: var(--highlightblue);
     border-radius: 0 0 15px 15px;
+    width: 100%;
+    height: 100%;
 }
 
 .gallery__item img {
@@ -181,7 +183,7 @@ body {
   }
 
   .postImageVideo {
-    border: 5px solid #a59bff;
+    border: 5px solid var(--highlightpurple);
     border-radius: 5px;
     cursor: pointer;
     position: relative;
@@ -201,13 +203,13 @@ body {
   }
 
   .postImageGallery img {
-    border: 5px solid #a59bff;
+    border: 5px solid var(--highlightpurple);
     border-radius: 5px;
     cursor: pointer;
   }
 
   .postImageGalleryBot img {
-    border: 5px solid #a59bff;
+    border: 5px solid var(--highlightpurple);
     border-radius: 5px;
     cursor: pointer;
   }
@@ -233,6 +235,16 @@ body {
     max-width: 90%;
     max-height: 90%;
     border: 2px solid white;
+  }
+
+  .postLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+
   }
 
 
